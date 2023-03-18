@@ -1,0 +1,390 @@
+/*Imports*/
+@media screen and (max-width: 768px){
+    section{
+        flex-wrap: wrap;
+    }
+    section img{
+        height: 80%;
+    }
+    section img:hover{
+        width: 70%;
+        
+    }
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*Esto es un estilo universal*/
+*{
+    padding: 1px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans-serif;
+}
+/*Estilo del header*/
+.nav-pills .nav-link.active{
+    color: black;
+    background-color: rgb(248, 248, 146);
+}
+.nav-link{
+    color: black;
+}
+.fs-6{
+    text-align: center;
+}
+.mr0{
+    margin-right: 0;
+    margin-left: auto;
+}
+.m0a{
+    margin: 0 auto;
+}
+.divNombre{
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.wsp{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    text-decoration: none;
+}
+.wsp a{
+    color: rgb(117, 255, 112);
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.listaNav{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    /* position: absolute; */
+    right: 25px;
+    top: 15px;
+    bottom: 15px;
+}
+.linkNav{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+/*Estilo del body*/
+h2{
+    text-align: center;
+}
+.colorFondoMain{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+}
+.textoPresentacion{
+    font-size: 40px;
+    display: block;
+    text-align: center; 
+    margin-top: 20%; 
+}
+.textoPresentacion h2{
+    font-size: 70px;
+    margin: 100px 0;
+}
+.imagenFondoPrincipal{
+    color: white;
+    width: auto;
+    height: 100vh;
+    background-image: url("../Assests/IMG/pexels-marlon-martinez-1450082.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.sigamosEnContacto{
+    color: white;
+    background-color: grey;
+    display: block;
+    text-align: center;
+    padding: 45px;
+}
+.textoTransparente{
+    color: rgba(255, 255, 255, 0.644);
+}
+.comenzarAhora{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    background-color: rgb(216, 216, 103);
+    padding: 7px;
+}
+.fondoFooter{
+    background-color: rgba(0, 0, 0, 0.938);
+}
+/*Estilos del footer y sus hijos*/
+.listaFooter{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto 50px;
+}
+.listaFooter a{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+}
+.textoFooter{
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+.textoFooter2{
+    color: rgb(87, 62, 145);
+    text-align: center;
+    font-size: 10px;
+}
+/*Los PX son unidades de medidas absolutas*/
+/*Los % son unidades de medidas relativas*/
+/*Los REM son unidades de medidas relativas a los pixeles que tenga la fuente del navegador*/
+/*Los EM son unidades de medidas relativas a la configuracion del padre*/
+
+/*Estilos de la página "Sobre mi"*/
+
+.tituloYo{
+    text-align: center;
+    font-size: 50px;
+}
+.imgEstudiante{
+    max-width: 100%;
+    height: 500px;
+    width: 650px;
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+}
+.imgEmprendedor{
+    max-width: 100%;
+    height: 500px;
+    width: 650px;
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+}
+.emprendedor{
+    color: #000000;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+.estudiante{
+    color: #000000;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+.cajaYo{
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 5px;
+}
+/*Estilos de la pagina "Cursos y libros"*/
+.tituloCyl{
+    color: #000000;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.tituloCursosYLibros{
+    text-align: center;
+    margin: 10px auto;
+    width: 50%;
+}
+
+#seccionImgs{
+    width: 90%;
+    margin:0 auto;
+    height: 85vh;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0.5px solid gray;
+}
+
+#seccionImgs div{
+    width: 0px;
+    height:100%;
+    flex-grow: 1;/*que dentro de la caja flexible ocupe todo el espacio que pueda*/
+    object-fit: cover;
+    /*
+    object-fit: cover; //para que la imagen se adapte al tamaño de la caja
+    */
+    opacity: 0.5;
+    transition: .5s ease;
+}
+#seccionImgs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.textoImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: none;
+    background-color: rgba(37, 37, 37, 0.918);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20%;
+}
+
+#seccionImgs div:hover{
+    width: 30%;
+    opacity: 1;
+    filter:contrast(120%);
+}
+#seccionImgs div:hover >.textoImg{
+    display: block;
+}
+
+/*Estilos de la pagina "Podcasts"*/
+.titulosPodcast{
+    color: #000000;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+.podcasts{
+    max-width: 100%;
+}
+.calendario{
+    margin: 0 auto;
+    display: block;
+
+}
+
+/*Estilos de la pagina "Formulario"*/
+.formulario{
+    margin: 10% auto;
+    width: 40%;
+}
+.tituloForm{
+    text-align: center;
+}
+/*MediaQuerys de "Sobre mi"*/
+@media(max-width:1280px){
+    .colorFondoMain{
+        margin-top: 7%;
+    }
+}
+@media(max-width:905px){
+    .colorFondoMain{
+        margin-top: 9%;
+    }
+}
+@media(max-width:715px){
+    .colorFondoMain{
+        margin-top: 11%;
+    }
+}
+@media(max-width:580px){
+    .colorFondoMain{
+        margin-top: 13%;
+    }
+}
+@media(max-width:490px){
+    .colorFondoMain{
+        margin-top: 15%;
+    }
+}
+@media(max-width:420px){
+    .colorFondoMain{
+        margin-top: 17%;
+    }
+}
+/*MediaQuerys del Formulario*/
+@media(max-width:2500px){
+    .m0a{
+        width: 25%;
+    }
+}
+@media(max-width:1050px){
+    .m0a{
+        width: 30%;
+    }
+}
+@media(max-width:890px){
+    .m0a{
+        width: 40%;
+    }
+}
+@media(max-width:650px){
+    .m0a{
+        width: 50%;
+    }
+}
+@media(max-width:475px){
+    .m0a{
+        width: 60%;
+    }
+}
+@media(max-width:375px){
+    .m0a{
+        width: 80%;
+    }
+}
+@media(max-width:720px){
+    .tituloForm{
+        margin-top: 10%;
+    }
+}
+@media(max-width:500px){
+    .tituloForm{
+        margin-top: 20%;
+    }
+}
+@media(max-width:420px){
+    .tituloForm{
+        margin-top: 30%;
+    }
+}
+@media(max-width:1000px){
+    .formulario{
+        width: 60%;
+    }
+}
+@media(max-width:630px){
+    .formulario{
+        width: 60%;
+    }
+}
+@media(max-width:500px){
+    .formulario{
+        width: 80%;
+    }
+}
