@@ -1,0 +1,72 @@
+/*Estilos de la página "Sobre mi"*/
+
+.tituloYo{
+    text-align: center;
+    font-size: 50px;
+}
+.imgEstudiante{
+    max-width: 100%;
+    height: 500px;
+    width: 650px;
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+}
+.imgEmprendedor{
+    max-width: 100%;
+    height: 500px;
+    width: 650px;
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+}
+.emprendedor{
+    color: $color-negro;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+.estudiante{
+    color: $color-negro;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+.cajaYo{
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 5px;
+}
+/*MediaQuerys de "Sobre mi"*/
+@media(max-width:1280px){
+    .colorFondoMain{
+        margin-top: 7%;
+    }
+}
+@media(max-width:905px){
+    .colorFondoMain{
+        margin-top: 9%;
+    }
+}
+@media(max-width:715px){
+    .colorFondoMain{
+        margin-top: 11%;
+    }
+}
+@media(max-width:580px){
+    .colorFondoMain{
+        margin-top: 13%;
+    }
+}
+@media(max-width:490px){
+    .colorFondoMain{
+        margin-top: 15%;
+    }
+}
+@media(max-width:420px){
+    .colorFondoMain{
+        margin-top: 17%;
+    }
+}

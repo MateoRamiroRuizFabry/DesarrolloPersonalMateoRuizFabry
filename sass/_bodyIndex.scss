@@ -1,0 +1,49 @@
+/*Estilo del body de "index"*/
+h2{
+    text-align: center;
+}
+.colorFondoMain{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+}
+.textoPresentacion{
+    font-size: 40px;
+    display: block;
+    text-align: center; 
+    margin-top: 20%; 
+}
+.textoPresentacion h2{
+    font-size: 70px;
+    margin: 100px 0;
+}
+.imagenFondoPrincipal{
+    color: white;
+    width: auto;
+    height: 100vh;
+    background-image: url("../Assests/IMG/pexels-marlon-martinez-1450082.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+.sigamosEnContacto{
+    color: white;
+    background-color: grey;
+    display: block;
+    text-align: center;
+    padding: 45px;
+}
+.textoTransparente{
+    color: rgba(255, 255, 255, 0.644);
+}
+.comenzarAhora{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    background-color: rgb(216, 216, 103);
+    padding: 7px;
+}
+.fondoFooter{
+    background-color: rgba(0, 0, 0, 0.938);
+}

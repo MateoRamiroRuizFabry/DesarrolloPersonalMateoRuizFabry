@@ -1,0 +1,17 @@
+/*Estilos de la pagina "Podcasts"*/
+.titulosPodcast{
+    color: $color-negro;
+    text-align: center;
+    background-color: rgb(255, 255, 146);
+    border: 2px solid rgba(34, 33, 33, 0.911);
+    border-radius: 10px;
+    margin: 7px;
+}
+.podcasts{
+    max-width: 100%;
+}
+.calendario{
+    margin: 0 auto;
+    display: block;
+
+}
