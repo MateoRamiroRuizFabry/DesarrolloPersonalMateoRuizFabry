@@ -8,13 +8,13 @@
 }
 
 /*Estilo del header*/
-.nav-pills .nav-link.active {
-  color: black;
-  background-color: rgb(248, 248, 146);
-}
-
-.nav-link {
-  color: black;
+.logo {
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .fs-6 {
@@ -25,18 +25,13 @@
   margin-right: 0;
   margin-left: auto;
 }
-
-.m0a {
-  margin: 0 auto;
+.mr0 .nav-link {
+  color: black;
 }
 
-.divNombre {
-  font-size: 1rem;
-  text-align: center;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  border: 1px solid black;
+.nav-pills .nav-link.active {
+  color: black;
+  background-color: rgb(248, 248, 146);
 }
 
 .wsp {
@@ -49,61 +44,13 @@
   font-size: 20px;
   text-decoration: none;
 }
-
-.wsp a {
+.wsp .wspAncla {
   color: rgb(117, 255, 112);
   font-size: 50px;
   text-decoration: none;
 }
 
-.logo {
-  padding: 0;
-  margin: 0;
-  width: 60px;
-  height: 60px;
-  border: 1px solid black;
-  border-radius: 10px;
-}
-
-.listaNav {
-  list-style: none;
-  display: inline-flex;
-  justify-content: space-between;
-  right: 25px;
-  top: 15px;
-  bottom: 15px;
-}
-
-.linkNav {
-  list-style: none;
-  display: inline-block;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
 /*Estilo del body de "index"*/
-h2 {
-  text-align: center;
-}
-
-.colorFondoMain {
-  background-color: rgb(255, 255, 255);
-  margin-top: 5%;
-}
-
-.textoPresentacion {
-  font-size: 40px;
-  display: block;
-  text-align: center;
-  margin-top: 20%;
-}
-
-.textoPresentacion h2 {
-  font-size: 70px;
-  margin: 100px 0;
-}
-
 .imagenFondoPrincipal {
   color: white;
   width: auto;
@@ -113,20 +60,14 @@ h2 {
   background-size: cover;
   background-position: center;
 }
-
-.sigamosEnContacto {
-  color: white;
-  background-color: grey;
+.imagenFondoPrincipal .textoPresentacion {
+  font-size: 40px;
   display: block;
   text-align: center;
-  padding: 45px;
+  margin-top: 20%;
 }
-
-.textoTransparente {
-  color: rgba(255, 255, 255, 0.644);
-}
-
-.comenzarAhora {
+.imagenFondoPrincipal .textoPresentacion .comenzarAhora {
+  font-size: 20px;
   list-style: none;
   text-decoration: none;
   color: white;
@@ -135,55 +76,62 @@ h2 {
   background-color: rgb(216, 216, 103);
   padding: 7px;
 }
+.imagenFondoPrincipal .textoPresentacion .textoPresentacionH2 {
+  font-size: 70px;
+  margin: 100px 0;
+}
 
-.fondoFooter {
-  background-color: rgba(0, 0, 0, 0.938);
+.sigamosEnContacto {
+  color: white;
+  background-color: grey;
+  display: block;
+  text-align: center;
+  padding: 45px;
+}
+.sigamosEnContacto .m0a {
+  margin: 0 auto;
+}
+.sigamosEnContacto .textoTransparente {
+  color: rgba(255, 255, 255, 0.644);
 }
 
 /*Estilos de la página "Sobre mi"*/
-.tituloYo {
-  text-align: center;
-  font-size: 50px;
+.colorFondoMain {
+  background-color: rgb(255, 255, 255);
+  margin-top: 5%;
 }
-
-.imgEstudiante {
+.colorFondoMain .imgEmprendedor {
   max-width: 100%;
   height: 500px;
-  width: 650px;
   border: 2px solid rgba(34, 33, 33, 0.911);
   border-radius: 10px;
 }
-
-.imgEmprendedor {
+.colorFondoMain .imgEstudiante {
   max-width: 100%;
   height: 500px;
-  width: 650px;
   border: 2px solid rgba(34, 33, 33, 0.911);
   border-radius: 10px;
 }
-
-.emprendedor {
-  color: black;
-  text-align: center;
-  background-color: rgb(255, 255, 146);
-  border: 2px solid rgba(34, 33, 33, 0.911);
-  border-radius: 10px;
-  margin: 7px;
-}
-
-.estudiante {
-  color: black;
-  text-align: center;
-  background-color: rgb(255, 255, 146);
-  border: 2px solid rgba(34, 33, 33, 0.911);
-  border-radius: 10px;
-  margin: 7px;
-}
-
-.cajaYo {
+.colorFondoMain .cajaYo {
   border: 2px solid rgba(34, 33, 33, 0.911);
   border-radius: 10px;
   margin: 5px;
+}
+.colorFondoMain .cajaYo .estudiante {
+  color: black;
+  text-align: center;
+  background-color: rgb(255, 255, 146);
+  border: 2px solid rgba(34, 33, 33, 0.911);
+  border-radius: 10px;
+  margin: 7px;
+}
+.colorFondoMain .cajaYo .emprendedor {
+  color: black;
+  text-align: center;
+  background-color: rgb(255, 255, 146);
+  border: 2px solid rgba(34, 33, 33, 0.911);
+  border-radius: 10px;
+  margin: 7px;
 }
 
 /*MediaQuerys de "Sobre mi"*/
@@ -217,23 +165,38 @@ h2 {
     margin-top: 17%;
   }
 }
+@media (max-width: 1199px) {
+  .imgEmprendedor {
+    width: 100%;
+  }
+  .contenedorImg {
+    width: 100%;
+  }
+}
+@media (min-width: 1199px) {
+  .imgEmprendedor {
+    width: 650px;
+  }
+}
+@media (max-width: 1199px) {
+  .imgEstudiante {
+    width: 100%;
+  }
+  .contenedorImg {
+    width: 100%;
+  }
+}
+@media (min-width: 1199px) {
+  .imgEstudiante {
+    width: 650px;
+  }
+}
 /*Estilos de la pagina "Cursos y libros"*/
-.tituloCyl {
-  color: black;
-  text-align: center;
-  background-color: rgb(255, 255, 146);
-  border: 2px solid rgba(34, 33, 33, 0.911);
-  border-radius: 10px;
-  margin: 7px;
+.colorFondoMain {
+  background-color: rgb(255, 255, 255);
+  margin-top: 5%;
 }
-
-.tituloCursosYLibros {
-  text-align: center;
-  margin: 10px auto;
-  width: 50%;
-}
-
-#seccionImgs {
+.colorFondoMain #seccionImgs {
   width: 90%;
   margin: 0 auto;
   height: 85vh;
@@ -243,8 +206,7 @@ h2 {
   align-items: center;
   border: 0.5px solid gray;
 }
-
-#seccionImgs div {
+.colorFondoMain #seccionImgs div {
   width: 0px;
   height: 100%;
   flex-grow: 1; /*que dentro de la caja flexible ocupe todo el espacio que pueda*/
@@ -256,15 +218,7 @@ h2 {
   opacity: 0.5;
   transition: 0.5s ease;
 }
-
-#seccionImgs img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.textoImg {
+.colorFondoMain #seccionImgs div .textoImg {
   position: absolute;
   top: 0;
   left: 0;
@@ -275,20 +229,34 @@ h2 {
   height: 100%;
   text-align: center;
   padding: 20%;
+  overflow: hidden;
 }
-
-#seccionImgs div:hover {
+.colorFondoMain #seccionImgs div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.colorFondoMain #seccionImgs div:hover {
   width: 30%;
   opacity: 1;
   filter: contrast(120%);
 }
-
-#seccionImgs div:hover > .textoImg {
+.colorFondoMain #seccionImgs div:hover > .textoImg {
   display: block;
+}
+.colorFondoMain .tituloCyl {
+  color: black;
+  text-align: center;
+  background-color: rgb(255, 255, 146);
+  border: 2px solid rgba(34, 33, 33, 0.911);
+  border-radius: 10px;
+  margin: 10px auto;
+  width: 50%;
 }
 
 /*MediaQuerys de "Cursos y Lirbos"*/
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   section {
     flex-wrap: wrap;
   }
@@ -300,6 +268,11 @@ h2 {
   }
 }
 /*Estilos de la pagina "Podcasts"*/
+.colorFondoMain {
+  background-color: rgb(255, 255, 255);
+  margin-top: 5%;
+}
+
 .titulosPodcast {
   color: black;
   text-align: center;
@@ -318,6 +291,37 @@ h2 {
   display: block;
 }
 
+/*MediaQuerys de "Sobre mi"*/
+@media (max-width: 1280px) {
+  .colorFondoMain {
+    margin-top: 7%;
+  }
+}
+@media (max-width: 905px) {
+  .colorFondoMain {
+    margin-top: 9%;
+  }
+}
+@media (max-width: 715px) {
+  .colorFondoMain {
+    margin-top: 11%;
+  }
+}
+@media (max-width: 580px) {
+  .colorFondoMain {
+    margin-top: 13%;
+  }
+}
+@media (max-width: 490px) {
+  .colorFondoMain {
+    margin-top: 15%;
+  }
+}
+@media (max-width: 420px) {
+  .colorFondoMain {
+    margin-top: 17%;
+  }
+}
 /*Estilos de la pagina "Formulario"*/
 .formulario {
   margin: 10% auto;
@@ -390,6 +394,10 @@ h2 {
   }
 }
 /*Estilos del footer y sus hijos*/
+.fondoFooter {
+  background-color: rgba(0, 0, 0, 0.938);
+}
+
 .listaFooter {
   list-style-type: none;
   display: flex;

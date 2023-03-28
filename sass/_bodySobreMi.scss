@@ -1,43 +1,31 @@
 /*Estilos de la página "Sobre mi"*/
-
-.tituloYo{
-    text-align: center;
-    font-size: 50px;
-}
-.imgEstudiante{
-    max-width: 100%;
-    height: 500px;
-    width: 650px;
-    border: 2px solid rgba(34, 33, 33, 0.911);
-    border-radius: 10px;
-}
-.imgEmprendedor{
-    max-width: 100%;
-    height: 500px;
-    width: 650px;
-    border: 2px solid rgba(34, 33, 33, 0.911);
-    border-radius: 10px;
-}
-.emprendedor{
-    color: $color-negro;
-    text-align: center;
-    background-color: rgb(255, 255, 146);
-    border: 2px solid rgba(34, 33, 33, 0.911);
-    border-radius: 10px;
-    margin: 7px;
-}
-.estudiante{
-    color: $color-negro;
-    text-align: center;
-    background-color: rgb(255, 255, 146);
-    border: 2px solid rgba(34, 33, 33, 0.911);
-    border-radius: 10px;
-    margin: 7px;
-}
-.cajaYo{
-    border: 2px solid rgba(34, 33, 33, 0.911);
-    border-radius: 10px;
-    margin: 5px;
+.colorFondoMain{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    .imgEmprendedor{
+        max-width: 100%;
+        height: 500px;
+        border: map-get($map: bordes, $key: border, border-radius);
+    }
+    .imgEstudiante{
+        max-width: 100%;
+        height: 500px;
+        border: map-get($map: bordes, $key: border, border-radius);
+    }
+    .cajaYo{
+        border: map-get($map: bordes, $key: border, border-radius);;
+        margin: 5px;
+        .estudiante{
+            color: $color-negro;
+            text-align: center;
+            background-color: rgb(255, 255, 146);
+            border: map-get($map: bordes, $key: border, border-radius);
+            margin: 7px;
+        }
+        .emprendedor{
+            @extend .estudiante;
+        }
+    }
 }
 /*MediaQuerys de "Sobre mi"*/
 @media(max-width:1280px){
@@ -68,5 +56,31 @@
 @media(max-width:420px){
     .colorFondoMain{
         margin-top: 17%;
+    }
+}
+@media(max-width:1199px){
+    .imgEmprendedor{
+        width: 100%;
+    }
+    .contenedorImg{
+        width: 100%;
+    }
+}
+@media(min-width:1199px){
+    .imgEmprendedor{
+        width: 650px;
+    }
+}
+@media(max-width:1199px){
+    .imgEstudiante{
+        width: 100%;
+    }
+    .contenedorImg{
+        width: 100%;
+    }
+}
+@media(min-width:1199px){
+    .imgEstudiante{
+        width: 650px;
     }
 }

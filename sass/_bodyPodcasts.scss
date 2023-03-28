@@ -1,17 +1,51 @@
 /*Estilos de la pagina "Podcasts"*/
-.titulosPodcast{
-    color: $color-negro;
-    text-align: center;
-    background-color: rgb(255, 255, 146);
-    border: 2px solid rgba(34, 33, 33, 0.911);
-    border-radius: 10px;
-    margin: 7px;
+.colorFondoMain{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5%;
+    .calendario{
+        margin: 0 auto;
+        display: block;
+    
+    }
+    .podcasts{
+        max-width: 100%;
+    }
+    .titulosPodcast{
+        color: $color-negro;
+        text-align: center;
+        background-color: rgb(255, 255, 146);
+        border: map-get($map: bordes, $key: border, border-radius);
+        margin: 7px;
+    }
 }
-.podcasts{
-    max-width: 100%;
+/*MediaQuerys de "Sobre mi"*/
+@media(max-width:1280px){
+    .colorFondoMain{
+        margin-top: 7%;
+    }
 }
-.calendario{
-    margin: 0 auto;
-    display: block;
-
+@media(max-width:905px){
+    .colorFondoMain{
+        margin-top: 9%;
+    }
+}
+@media(max-width:715px){
+    .colorFondoMain{
+        margin-top: 11%;
+    }
+}
+@media(max-width:580px){
+    .colorFondoMain{
+        margin-top: 13%;
+    }
+}
+@media(max-width:490px){
+    .colorFondoMain{
+        margin-top: 15%;
+    }
+}
+@media(max-width:420px){
+    .colorFondoMain{
+        margin-top: 17%;
+    }
 }

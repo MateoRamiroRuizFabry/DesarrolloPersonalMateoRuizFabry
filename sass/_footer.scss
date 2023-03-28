@@ -1,22 +1,25 @@
 /*Estilos del footer y sus hijos*/
-.listaFooter{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 5px auto 50px;
-}
-.listaFooter a{
-    color: aliceblue;
-    font-size: 20px;
-    text-decoration: none;
-}
-.textoFooter{
-    color: white;
-    text-align: center;
-    font-size: 10px;
-}
-.textoFooter2{
-    color: rgb(87, 62, 145);
-    text-align: center;
-    font-size: 10px;
+.fondoFooter{
+    background-color: rgba(0, 0, 0, 0.938);
+    .textoFooter{
+        color: white;
+        text-align: center;
+        font-size: 10px;
+    }
+    .textoFooter2{
+        color: rgb(87, 62, 145);
+        text-align: center;
+        font-size: 10px;
+    }
+    .listaFooter{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin: 5px auto 50px;
+        a{
+            color: aliceblue;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
 }

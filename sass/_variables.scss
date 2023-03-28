@@ -1,3 +1,8 @@
 /*Creación de variables*/
 $tipografia-general: 'Roboto Slab', sans-serif;
 $color-negro: black;
+/*Mapa para bordes*/
+$bordes:(
+    border: 2px solid rgba(34, 33, 33, 0.911),
+    border-radius: 10px,
+)
