@@ -3,7 +3,17 @@
     margin-top: 5%;
     text-align: center;
     align-items: center;
+    height: 70vh;
   }
   .img404{
     width: 50%;
+  }
+  @media (max-width: 1200px) {
+    .main404 {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .img404{
+      width: 100%;
+    }
   }
