@@ -15,7 +15,7 @@
         border: map-get($map: bordes, $key: border, border-radius);
     }
     .cajaYo{
-        border: map-get($map: bordes, $key: border, border-radius);;
+        border: map-get($map: bordes, $key: border, border-radius);
         margin: 5px;
         .estudiante{
             color: $color-negro;

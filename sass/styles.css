@@ -133,7 +133,16 @@
   border-radius: 10px;
   margin: 7px;
 }
-
+/*Estilos de la página de "Error 404"*/
+.main404{
+  display: flex;
+  margin-top: 5%;
+  text-align: center;
+  align-items: center;
+}
+.img404{
+  width: 50%;
+}
 /*MediaQuerys de "Sobre mi"*/
 @media (max-width: 1280px) {
   .colorFondoMain {
